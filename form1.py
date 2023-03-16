@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'UI/form1.ui'
+# Form implementation generated from reading ui file 'UI\form1.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.4
 #
@@ -14,25 +14,44 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Form1(object):
     def setupUi(self, Form1):
         Form1.setObjectName("Form1")
-        Form1.resize(489, 100)
-        self.lbl_link = QtWidgets.QTextBrowser(Form1)
-        self.lbl_link.setGeometry(QtCore.QRect(20, 30, 256, 31))
-        self.lbl_link.setObjectName("lbl_link")
-        self.btn_submit = QtWidgets.QPushButton(Form1)
-        self.btn_submit.setGeometry(QtCore.QRect(380, 30, 75, 31))
-        self.btn_submit.setObjectName("btn_submit")
-        self.btn_select_file = QtWidgets.QPushButton(Form1)
-        self.btn_select_file.setGeometry(QtCore.QRect(290, 30, 75, 31))
-        self.btn_select_file.setObjectName("btn_select_file")
+        Form1.resize(349, 102)
+        Form1.setStyleSheet("background-color: rgb(210, 200, 200);")
+        self.progressBar = QtWidgets.QProgressBar(Form1)
+        self.progressBar.setGeometry(QtCore.QRect(20, 40, 301, 23))
+        self.progressBar.setStyleSheet("QProgressBar{\n"
+"    background-color:rgb(210, 200, 200);\n"
+"    border-style: none;\n"
+"    border-radius: 10px;\n"
+"    text-align: center;\n"
+"    color: rgb(0, 0, 0)\n"
+"}\n"
+"QProgressBar::chunk{\n"
+"    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(202, 168, 107, 255), stop:1 rgba(255, 255, 255, 255));\n"
+"\n"
+"    border-radius: 10px;\n"
+"}")
+        self.progressBar.setProperty("value", 24)
+        self.progressBar.setObjectName("progressBar")
+        self.label = QtWidgets.QLabel(Form1)
+        self.label.setGeometry(QtCore.QRect(20, 10, 121, 16))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label.setFont(font)
+        self.label.setObjectName("label")
+        self.label_2 = QtWidgets.QLabel(Form1)
+        self.label_2.setGeometry(QtCore.QRect(20, 70, 151, 16))
+        self.label_2.setObjectName("label_2")
 
         self.retranslateUi(Form1)
         QtCore.QMetaObject.connectSlotsByName(Form1)
 
     def retranslateUi(self, Form1):
         _translate = QtCore.QCoreApplication.translate
-        Form1.setWindowTitle(_translate("Form1", "Form"))
-        self.btn_submit.setText(_translate("Form1", "Submit"))
-        self.btn_select_file.setText(_translate("Form1", "Select File"))
+        Form1.setWindowTitle(_translate("Form1", "Đang tải"))
+        self.label.setText(_translate("Form1", "Đang tải dữ liệu"))
+        self.label_2.setText(_translate("Form1", "TextLabel"))
 
 
 if __name__ == "__main__":

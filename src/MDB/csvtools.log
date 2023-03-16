@@ -1,0 +1,4 @@
+2023-03-13 16:00:09,376 - main.py:290 - INFO - Configuration
+2023-03-13 16:00:09,377 - main.py:291 - INFO - Default from_date :20120131
+2023-03-13 16:00:09,377 - main.py:294 - INFO - Abs path :D:\Scropper\python_app\src\MDB\result_file
+2023-03-13 16:00:09,377 - main.py:299 - INFO - Product list file :D:\Scropper\python_app\data\jan_cd.xlsx

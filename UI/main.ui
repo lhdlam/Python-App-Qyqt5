@@ -6,134 +6,72 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>896</width>
+    <height>659</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Scropper</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(217, 217, 217);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QStackedWidget" name="stackedWidget">
-    <property name="geometry">
-     <rect>
-      <x>170</x>
-      <y>10</y>
-      <width>621</width>
-      <height>571</height>
-     </rect>
-    </property>
-    <property name="currentIndex">
-     <number>0</number>
-    </property>
-    <widget class="QWidget" name="page_1">
-     <widget class="QSplitter" name="splitter">
-      <property name="geometry">
-       <rect>
-        <x>50</x>
-        <y>20</y>
-        <width>531</width>
-        <height>23</height>
-       </rect>
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="0" column="0">
+     <widget class="QFrame" name="frame">
+      <property name="minimumSize">
+       <size>
+        <width>170</width>
+        <height>600</height>
+       </size>
       </property>
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-      <widget class="QPushButton" name="btn1_1">
-       <property name="text">
-        <string>Button A</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="btn1_2">
-       <property name="text">
-        <string>Button B</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="btn1_3">
-       <property name="text">
-        <string>Button C</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="btn1_4">
-       <property name="text">
-        <string>Button D</string>
-       </property>
-      </widget>
-     </widget>
-     <widget class="QFrame" name="frame_btn1_1">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>60</y>
-        <width>591</width>
-        <height>511</height>
-       </rect>
-      </property>
-      <property name="frameShape">
-       <enum>QFrame::StyledPanel</enum>
-      </property>
-      <property name="frameShadow">
-       <enum>QFrame::Raised</enum>
-      </property>
-      <widget class="QTableWidget" name="table_excel">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>20</y>
-         <width>571</width>
-         <height>481</height>
-        </rect>
-       </property>
-      </widget>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="page_2">
-     <widget class="QSplitter" name="splitter_2">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>20</y>
-        <width>581</width>
-        <height>23</height>
-       </rect>
-      </property>
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-      <widget class="QPushButton" name="btn2_1">
-       <property name="text">
-        <string>Button A</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="btn2_2">
-       <property name="text">
-        <string>Button B</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="btn2_3">
-       <property name="text">
-        <string>Button C</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="btn2_4">
-       <property name="text">
-        <string>Button D</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="btn2_5">
-       <property name="text">
-        <string>Button E</string>
-       </property>
-      </widget>
-     </widget>
-     <widget class="QFrame" name="frame_btn1_2">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>60</y>
-        <width>591</width>
-        <height>511</height>
-       </rect>
+      <property name="styleSheet">
+       <string notr="true">QFrame#frame{
+ background-color: rgb(210, 200, 200);
+}
+QPushButton#btn1{
+         color: rgba(0, 0, 0, 150);
+         background-color: rgb(110, 145, 223);}
+QPushButton#btn1:hover{
+background-color:  rgb(202, 168, 107);}
+QPushButton#btn1:pressed{
+ padding-left: 2px;
+ padding-top: 2px;
+ background-color: rgb(202, 168, 107);}
+
+QPushButton#btn2{
+         color: rgba(0, 0, 0, 150);
+         background-color: rgb(110, 145, 223);}
+QPushButton#btn2:hover{
+background-color:  rgb(202, 168, 107);}
+QPushButton#btn2:pressed{
+ padding-left: 2px;
+ padding-top: 2px;
+ background-color: rgb(202, 168, 107);}
+
+QPushButton#btn3{
+         color: rgba(0, 0, 0, 150);
+         background-color: rgb(110, 145, 223);}
+QPushButton#btn3:hover{
+background-color:  rgb(202, 168, 107);}
+QPushButton#btn3:pressed{
+ padding-left: 2px;
+ padding-top: 2px;
+ background-color: rgb(202, 168, 107);}
+
+QPushButton#btn4{
+         color: rgba(0, 0, 0, 150);
+         background-color: rgb(110, 145, 223);}
+QPushButton#btn4:hover{
+background-color:  rgb(202, 168, 107);}
+QPushButton#btn4:pressed{
+ padding-left: 2px;
+ padding-top: 2px;
+ background-color: rgb(202, 168, 107);}
+
+
+</string>
       </property>
       <property name="frameShape">
        <enum>QFrame::StyledPanel</enum>
@@ -141,92 +79,409 @@
       <property name="frameShadow">
        <enum>QFrame::Raised</enum>
       </property>
-      <widget class="QTableWidget" name="table_excel_2">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>20</y>
-         <width>571</width>
-         <height>481</height>
-        </rect>
-       </property>
-      </widget>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QPushButton" name="btn1">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>Button1</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="btn2">
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Button2</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QPushButton" name="btn3">
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Dropbox</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QPushButton" name="btn4">
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>S_mart</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
      </widget>
-    </widget>
-    <widget class="QWidget" name="page_3"/>
-    <widget class="QWidget" name="page_4"/>
-   </widget>
-   <widget class="QFrame" name="frame">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>171</width>
-      <height>611</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
-    </property>
-    <widget class="QPushButton" name="btn4">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>440</y>
-       <width>120</width>
-       <height>50</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Button4</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="btn1">
-     <property name="enabled">
-      <bool>true</bool>
-     </property>
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>80</y>
-       <width>120</width>
-       <height>50</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Button1</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="btn3">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>320</y>
-       <width>120</width>
-       <height>50</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Button3</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="btn2">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>200</y>
-       <width>120</width>
-       <height>50</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Button2</string>
-     </property>
-    </widget>
-   </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <widget class="QWidget" name="page_home">
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>190</y>
+          <width>701</width>
+          <height>181</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Harrington</family>
+          <pointsize>26</pointsize>
+          <italic>false</italic>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:36pt; font-weight:600; color:#6e91df;&quot;&gt;Scropper&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_1">
+       <property name="styleSheet">
+        <string notr="true">QStackedWidget#stackedWidget{
+background-color: rgb(217, 217, 217);
+}
+QFrame#frame{
+ background-color: rgb(210, 200, 200);
+}
+QPushButton#btn1_1{
+         color: rgba(0, 0, 0, 150);
+         background-color: rgb(202, 168, 107);}
+QPushButton#btn1_1:hover{
+background-color:  rgb(201, 131, 106);}
+QPushButton#btn1_1:pressed{
+ padding-left: 2px;
+ padding-top: 2px;
+ background-color: rgb(201, 131, 106);}
+
+QPushButton#btn1_2{
+         color: rgba(0, 0, 0, 150);
+         background-color:rgb(202, 168, 107);}
+QPushButton#btn1_2:hover{
+background-color:  rgb(201, 131, 106);}
+QPushButton#btn1_2:pressed{
+ padding-left: 2px;
+ padding-top: 2px;
+ background-color: rgb(201, 131, 106);}
+
+QPushButton#btn1_3{
+         color: rgba(0, 0, 0, 150);
+         background-color: rgb(202, 168, 107);}
+QPushButton#btn1_3:hover{
+background-color:  rgb(201, 131, 106);}
+QPushButton#btn1_3:pressed{
+ padding-left: 2px;
+ padding-top: 2px;
+ background-color: rgb(201, 131, 106);}
+
+QPushButton#btn1_4{
+         color: rgba(0, 0, 0, 150);
+         background-color: rgb(202, 168, 107);}
+QPushButton#btn1_4:hover{
+background-color:  rgb(201, 131, 106);}
+QPushButton#btn1_4:pressed{
+ padding-left: 2px;
+ padding-top: 2px;
+ background-color: rgb(201, 131, 106);}
+
+
+</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="1" column="0">
+         <widget class="QTableWidget" name="table_excel">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>500</width>
+            <height>500</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="0" column="2">
+           <widget class="QPushButton" name="btn1_3">
+            <property name="minimumSize">
+             <size>
+              <width>50</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>追加/更新判定</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QPushButton" name="btn1_4">
+            <property name="minimumSize">
+             <size>
+              <width>50</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>加工へ送る</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QPushButton" name="btn1_2">
+            <property name="minimumSize">
+             <size>
+              <width>50</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>MDBで検索</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QPushButton" name="btn1_1">
+            <property name="minimumSize">
+             <size>
+              <width>50</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Excelからインポート</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_2">
+       <property name="styleSheet">
+        <string notr="true">
+QPushButton#btn2_1{
+         color: rgba(0, 0, 0, 150);
+         background-color: rgb(202, 168, 107);}
+QPushButton#btn2_1:hover{
+background-color:  rgb(201, 131, 106);}
+QPushButton#btn2_1:pressed{
+ padding-left: 2px;
+ padding-top: 2px;
+ background-color: rgb(201, 131, 106);}
+
+QPushButton#btn2_2{
+         color: rgba(0, 0, 0, 150);
+         background-color:rgb(202, 168, 107);}
+QPushButton#btn2_2:hover{
+background-color:  rgb(201, 131, 106);}
+QPushButton#btn2_2:pressed{
+ padding-left: 2px;
+ padding-top: 2px;
+ background-color: rgb(201, 131, 106);}
+
+QPushButton#btn2_3{
+         color: rgba(0, 0, 0, 150);
+         background-color: rgb(202, 168, 107);}
+QPushButton#btn2_3:hover{
+background-color:  rgb(201, 131, 106);}
+QPushButton#btn2_3:pressed{
+ padding-left: 2px;
+ padding-top: 2px;
+ background-color: rgb(201, 131, 106);}
+
+QPushButton#btn2_4{
+         color: rgba(0, 0, 0, 150);
+         background-color: rgb(202, 168, 107);}
+QPushButton#btn2_4:hover{
+background-color:  rgb(201, 131, 106);}
+QPushButton#btn2_4:pressed{
+ padding-left: 2px;
+ padding-top: 2px;
+ background-color: rgb(201, 131, 106);}
+
+QPushButton#btn2_5{
+         color: rgba(0, 0, 0, 150);
+         background-color: rgb(202, 168, 107);}
+QPushButton#btn2_5:hover{
+background-color:  rgb(201, 131, 106);}
+QPushButton#btn2_5:pressed{
+ padding-left: 2px;
+ padding-top: 2px;
+ background-color: rgb(201, 131, 106);}</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_7">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="gridLayout_5">
+          <item row="0" column="0">
+           <widget class="QPushButton" name="btn2_1">
+            <property name="minimumSize">
+             <size>
+              <width>50</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>画像加工</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QPushButton" name="btn2_2">
+            <property name="minimumSize">
+             <size>
+              <width>50</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>テキスト加工</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QPushButton" name="btn2_3">
+            <property name="minimumSize">
+             <size>
+              <width>50</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>エクスポート</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QPushButton" name="btn2_4">
+            <property name="minimumSize">
+             <size>
+              <width>50</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Dropboxアップロード</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="4">
+           <widget class="QPushButton" name="btn2_5">
+            <property name="minimumSize">
+             <size>
+              <width>50</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>S_Martアップロード</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="0">
+         <widget class="QFrame" name="frame_btn1_2">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_6">
+           <item row="0" column="0">
+            <widget class="QTableWidget" name="table_excel_2"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_3"/>
+      <widget class="QWidget" name="page_4"/>
+     </widget>
+    </item>
+   </layout>
   </widget>
  </widget>
  <resources/>

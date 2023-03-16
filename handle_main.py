@@ -6,7 +6,7 @@ class Handle_Main(Ui_MainWindow):
     # self.setupUi(MainWindow)
     self.setupUi(mainwindow)
     
-    self.stackedWidget.setCurrentWidget(self.page_1)
+    self.stackedWidget.setCurrentWidget(self.page_home)
     
     self.btn1.clicked.connect(lambda: self.changePage(1))
     self.btn2.clicked.connect(lambda: self.changePage(2))
@@ -17,7 +17,7 @@ class Handle_Main(Ui_MainWindow):
     
     
   def changePage(self, index):
-    if index ==1:
+    if index == 1:
       self.stackedWidget.setCurrentWidget(self.page_1)
     elif index == 2:
       self.stackedWidget.setCurrentWidget(self.page_2)
@@ -25,7 +25,6 @@ class Handle_Main(Ui_MainWindow):
       self.stackedWidget.setCurrentWidget(self.page_3)
     elif index == 4:  
       self.stackedWidget.setCurrentWidget(self.page_4)
-        
     
 if __name__ == "__main__":
     import sys
